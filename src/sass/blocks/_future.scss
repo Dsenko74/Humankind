@@ -1,0 +1,35 @@
+.future {
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-height: 675px;
+        margin-top: 49px;
+        background: url('../../img/future/future_bg.jpg') center (center / cover) no-repeat;
+    }
+	&__title {
+		padding-top: 232px;
+		margin: 0 auto;
+		width: 1127px;
+		text-align: center;
+		span {
+			font-style: italic;
+		}
+	}
+	&__btn {
+		margin: 58px auto 100px auto;
+		/* margin-top: 58px; */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 200px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 52px;
+		text-align: center;
+		color: #006450;
+		border: 2px solid #006450;
+		background-color: rgba(28,28,28,0) ;
+	}
+}

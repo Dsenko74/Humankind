@@ -1,0 +1,38 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  
+}
+/* html {
+    max-width: 1440px;
+    margin: 0 auto;
+} */
+.container {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.divider {
+    margin: 25px 25px 0 25px;
+    height: 2px;
+    background: #006450;
+}
+
+
+@import 'blocks/header';
+@import 'blocks/deodorant';
+@import 'blocks/title';
+@import 'blocks/plastic-waste';
+@import 'blocks/sets';
+@import 'blocks/ecolog';
+@import 'blocks/bathroom';
+@import 'blocks/shampoo';
+@import 'blocks/shampoobar';
+@import 'blocks/future';
+@import 'blocks/footer';
+@import 'blocks/media';

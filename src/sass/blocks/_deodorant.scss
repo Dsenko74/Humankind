@@ -1,0 +1,29 @@
+.deodorant {
+        min-height: 882px;
+    &__wrapper {
+        min-height: 882px;
+        padding: 168px 0 0 25px;
+        background: url('../../img/deodorant/deodorant_bg.jpg') center (center/cover)	no-repeat;
+    }
+	&__item {
+		display: grid;
+		grid-template-columns: minmax(auto, 1165px) 225px;
+		justify-content: space-between;
+		column-gap: 10px;
+
+	}
+	&__btn {
+		margin-top: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 200px;
+		background: #E1FF32;
+		border: none;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 64px;
+		text-align: center;
+		color: #000000;
+	}
+}

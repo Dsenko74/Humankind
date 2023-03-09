@@ -1,0 +1,62 @@
+.title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFAEF;
+}
+
+@media (max-width: 768px) {
+	.title {
+		font-size: 30px;
+		line-height: 40px;
+	}
+}
+
+@media (max-width: 576px) {
+	.title {
+		font-size: 22px;
+		line-height: 27px;
+	}
+}
+
+.title {
+    &_green {
+        color: #006450;
+    }
+    &_lightgreen {
+        text-transform: lowercase;
+        color: #00C08B;
+    }
+    &_fz11 {
+        font-size: 11px;
+        line-height: 18px;
+    }
+    &_fz12 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    &_fz15 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    &_fz24 {
+        font-size: 24px;
+        line-height: 26px;
+        text-transform: lowercase;
+    }
+    &_fz30 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    &_fz56 {
+        font-size: 56px;
+        line-height: 62px;
+        font-weight: 400;
+    }
+    &_fz72 {
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 89px;
+    }
+}
+

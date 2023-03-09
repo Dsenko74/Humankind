@@ -1,0 +1,463 @@
+// питання
+//		1. Медіа правила взяті з останнього проекту з  курсу. Чому максимальна ширина екрана менша — хз
+
+@media (max-width: 1440px) {
+	.container {
+		max-width: 1200px;
+	}
+	.sets {
+		&__wrapper {
+			grid-template-columns: repeat(2,570px);
+			grid-template-rows: repeat(2,570px);
+			grid-auto-rows: 570px;
+			gap: 20px;
+		}
+		&__item {
+			width: 570px;
+			height: 570px;
+		}
+	}
+	.ecolog {
+		&__wrapper {
+			grid-template-columns: repeat(2,570px);
+			grid-template-rows: repeat(1,570px);
+			grid-auto-rows: 570px;
+			gap: 20px;
+		}
+		&__item {
+			width: 570px;
+			height: 570px;
+			&_2 {
+				padding-top: 135px;
+			}
+		}
+	}
+	.shampoobar {
+		&__wrapper {
+			grid-template-columns: repeat(2,570px);
+			grid-template-rows: 570px;
+			grid-auto-rows: 570px;
+			gap: 20px;
+		}
+		&__item {
+			width: 570px;
+			height: 570px;
+		}
+	}
+	.bathroom {
+		&__item {
+			padding-top: 50px;
+		}
+	}
+}
+
+
+@media (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+	.title {
+		&_fz72 {
+			font-size: 65px;
+		}
+	}
+	.sets {
+		&__wrapper {
+			grid-template-columns: 680px;
+			grid-template-rows: 680px;
+			grid-auto-rows: 680px;
+			gap: 20px;
+		}
+		&__item {
+			width: 680px;
+			height: 680px;
+		}
+	}
+	.ecolog {
+		&__wrapper {
+			grid-template-columns: 680px;
+			grid-template-rows: 680px;
+			grid-auto-rows: 680px;
+			gap: 20px;
+		}
+		&__item {
+			width: 680px;
+			height: 680px;
+			&_2, &_3, &_6 {
+				padding: 0 10px;
+				border: 1px solid #006450;
+			}
+			&_2 {
+				padding-top: 270px;
+			}
+			&_3{
+				order: 3;
+			}
+			&-landing {
+				left: 10px;
+			}
+		}
+	}
+	.shampoobar {
+		&__wrapper {
+			grid-template-columns: 680px;
+			grid-template-rows: 680px;
+			grid-auto-rows: 680px;
+			gap: 20px;
+		}
+		&__item {
+			width: 680px;
+			height: 680px;
+			&_2 {
+				padding: 0 10px;
+				border: 1px solid #006450;
+			}
+		}
+	}
+	.future {
+		&__title {
+			padding: 100px 20px 0 20px;
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		max-width: 720px;
+	}
+	.title {
+		&_fz56 {
+			font-size: 45px;
+			line-height: 62px;
+		}
+	}
+	.deodorant {
+		&__wrapper {
+			padding-top: 100px;
+		}
+	}
+	.sets {
+		&__wrapper {
+			grid-template-columns: 540px;
+			grid-template-rows: 540px;
+			grid-auto-rows: 540px;
+			gap: 20px;
+		}
+		&__item {
+			width: 540px;
+			height: 540px;
+		}
+	}
+	.ecolog {
+		&__wrapper {
+			grid-template-columns: 540px;
+			grid-template-rows: 540px;
+			grid-auto-rows: 540px;
+			gap: 20px;
+		}
+		&__item {
+			width: 540px;
+			height: 540px;
+			&_2 {
+				padding-top: 135px;
+			}
+		}
+		br {
+			display: none;
+		}
+	}
+	.shampoobar {
+		&__wrapper {
+			grid-template-columns: 540px;
+			grid-template-rows: 540px;
+			grid-auto-rows: 540px;
+			gap: 20px;
+		}
+		&__item {
+			width: 540px;
+			height: 540px;
+		}
+	}
+// написав говнокод для вирівнювання bathroom
+	.bathroom {
+		&__item {
+			justify-content: start;
+		}
+		&__landing {
+			padding-top: 150px;
+		}
+	}
+
+	.shampoo {
+		&__title {
+			width: 90%;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 540px;
+	}
+	.title {
+		&_fz15 {
+			font-size: 13px;
+		}
+		&_fz24 {
+			font-size: 20px;
+			line-height: 26px;
+		}
+		&_fz30 {
+			font-size: 15px;
+    		line-height: 17px;
+		}
+		&_fz56 {
+			font-size: 40px;
+		}
+		&_fz72 {
+			font-size: 50px;
+			line-height: 78px;
+		}
+	}
+	.menu {
+		position: fixed;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		left: -100%;
+		width: 50%;
+		/* height: 100vh;	  */
+		height: 937px;
+		padding: 20px 15px;	
+		background-color: rgba($color: #FFFAEF, $alpha: .8) ;
+		transition: 0.6s;
+		&_active {
+			left: 0;
+			align-items: baseline;
+		}
+		&__item {
+			padding-right: 0;
+			border: none;
+			margin: 20px 10px;
+		}
+		&__link {
+			font-size: 20px;
+		}
+	}
+	.hamburger {
+		display: block;
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 26px;
+		height: 12px;
+		z-index: 2;
+		span {
+			display: block;
+			height: 2px;
+			width: 100%;
+			background-color:  #ddcf2e;
+			margin-bottom: 2px;
+			transition: 0.5s;
+		}
+		&_active {
+			span {
+				margin-bottom: -2px;
+				&:nth-child(1) {
+					transform: translateY(3px) rotate(-45deg);
+				}
+				&:nth-child(2){
+					display: none;
+				}
+				&:nth-child(3) {
+					transform: translateY(3px) rotate(45deg);
+				}
+			}
+		}
+	}
+	.deodorant {
+		&__wrapper {
+			padding-top: 50px;
+		}
+		&__item {
+			grid-template-columns: 1fr;
+			padding-right: 5px;
+		}
+	}
+	.sets {
+		&__wrapper {
+			grid-template-columns: 500px;
+			grid-template-rows: 500px;
+			grid-auto-rows: 500px;
+			gap: 20px;
+		}
+		&__item {
+			width: 480px;
+			height: 480px;
+			&-descr {
+				padding: 15px 5px;
+			}
+		}
+		br {
+			display: none;
+		}
+		&_btn {
+			height: 50px;
+		}
+	}
+	.ecolog {
+		&__wrapper {
+			grid-template-columns: 500px;
+			grid-template-rows: 500px;
+			grid-auto-rows: 500px;
+			gap: 20px;
+		}
+		&__item {
+			width: 480px;
+			height: 480px;
+			&_2 {
+				padding-top: 100px;
+			}
+		}
+	}
+	.shampoobar {
+		&__wrapper {
+			grid-template-columns: 500px;
+			grid-template-rows: 500px;
+			grid-auto-rows: 500px;
+			gap: 20px;
+		}
+		&__item {
+			width: 480px;
+			height: 480px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.container {
+		max-width: 100%;
+		padding: 0 10px;
+	}
+	.title {
+		&_fz24{
+			font-size: 14px;
+			line-height: 18px;
+		}
+		&_fz56 {
+			font-size: 22px;
+			line-height: 35px;
+		}
+		&_fz72 {
+			font-size: 28px;
+			line-height: 45px;
+		}
+
+	}
+	.menu {
+		width: 75%;
+	}
+	.deodorant {
+		&__wrapper {
+			padding: 50px 5px 5px 10px;
+		}
+		&__btn {
+			margin-top: 40px;
+			width: 140px;
+			font-size: 14px;
+			line-height: 48px;
+		}
+	}
+	.plastic-waste {
+		br {
+			display: none;
+		}
+	}
+	.sets {
+		&__wrapper {
+			grid-template-columns: 300px;
+			grid-template-rows: 300px;
+			grid-auto-rows: 300px;
+			gap: 10px;
+		}
+		&__item {
+			width: 280px;
+			height: 280px;
+			&-descr {
+				padding: 5px 5px;
+			}
+		}
+		br {
+			display: none;
+		}
+		&_btn {
+			height: 40px;
+		}
+	}
+	.ecolog {
+		&__wrapper {
+			grid-template-columns: 300px;
+			grid-template-rows: 300px;
+			grid-auto-rows: 300px;
+			gap: 10px;
+		}
+		&__item {
+			width: 280px;
+			height: 280px;
+			&_2 {
+				padding-top: 70px;
+			}
+		}
+	}
+	.shampoobar {
+		&__wrapper {
+			grid-template-columns: 300px;
+			grid-template-rows: 300px;
+			grid-auto-rows: 300px;
+			gap: 10px;
+		}
+		&__item {
+			width: 280px;
+			height: 280px;
+		}
+	}
+	.future {
+		&__wrapper {
+			margin-top: 20px;
+		}
+		&__btn {
+			width: 150px;
+			line-height: 40px;
+		}
+	}
+	.footer {
+		&__wrapper {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			justify-content: space-between;
+		}
+		&__item {
+			ul {
+				&:nth-child(2) {
+				li {
+					text-align: right;
+				}
+				}
+			}
+		}
+		&__final {
+			margin-top: 45px;
+			display: grid;
+			grid-template-columns: 1fr;
+		}
+		&_copyright {
+			justify-self: center;
+		}
+		&__humankind, &__lessplastic {
+			display: none;
+		}
+	}
+}

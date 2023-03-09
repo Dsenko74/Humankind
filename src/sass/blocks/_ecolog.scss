@@ -1,0 +1,35 @@
+.ecolog {
+	&__wrapper{
+        padding: 13px;
+        display: grid;
+        grid-template-columns: repeat(2, 680px);
+        grid-template-rows: repeat(1, 680px);
+        justify-content: center;
+        gap: 25px;
+    }
+    &__item {
+        position: relative;
+        margin: 12px;
+        width: 680px;
+        height: 680px;
+        &_1 {
+            background: url('../../img/ecolog/bg_1.jpg') center (center / cover) no-repeat;
+        }
+		&_2 {
+			padding: 270px 20px 0 20px;
+			text-align: center;
+		}
+        &_4 {
+            background: url('../../img/ecolog/bg_2.jpg') center (center / cover) no-repeat;
+        }
+        &_5 {
+            background: url('../../img/ecolog/bg_3.jpg') center (center / cover) no-repeat;
+        }
+		&-landing {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			text-transform: lowercase;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.bathroom {
+  
+    &__inner {
+        display: flex;
+
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding-top: 92px;
+        margin: 0 auto;
+        width: 100%;
+        max-height: 542px;
+        text-align: center;
+    }
+    &__descr {
+        margin: 0 auto;
+        margin-top: 24px;
+        max-width: 777px;
+    }
+    &__landing {
+        align-self: start;
+        padding-left: 40px;
+    }
+}

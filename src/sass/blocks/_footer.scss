@@ -1,0 +1,34 @@
+.footer {
+    min-height: 238px;
+    margin: 25px 25px 0 25px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    ul {
+        list-style-type: none;
+    }
+    span {
+        font-style: italic;
+    }
+    &__link {
+        color: #006450;
+        &:hover {
+            color: #006450;
+        }
+    }
+
+    &__final {
+        margin-top: 45px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__humankind {
+        text-align: center;
+    }
+    &__lessplastic {
+        text-align: right;
+    }
+}
